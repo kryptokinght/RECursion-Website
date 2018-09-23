@@ -37,8 +37,9 @@ html {
     color: #f8f8f8;
     background: url(../icons/14.jpg) no-repeat center center;
     opacity: 0.7;
-    background-size: cover;
-}
+    background-size: cover;    
+}  
+
 .intro-message {
     position: relative;
     padding-top: 5%;
@@ -56,17 +57,24 @@ html {
 .get-message > h1 {
     margin: 0;
     text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
-    font-size: 10em;
+    font-size: 4rem;
+    @media (min-width: 500px) {font-size: 5rem;}
+    @media (min-width: 1000px) {font-size: 8rem;}
     color: #c17d66;
     letter-spacing: 10px;
     word-wrap: break-word;
 }
+
 .get-message p{
-    position: relative;
+    position: relative; 
     font-size: 2em;
+    font-weight: 500;
+    line-height: 1.4em;
     padding-top: 10%;
     padding-bottom: 7%; 
     color: #111111;
+    @media (min-width: 600px) {font-weight: 600; line-height: 1.6em;}
+    @media (min-width: 1000px) {line-height: 1.8em;}
 }
 .get-body {
     width: 100%;
@@ -92,6 +100,21 @@ html {
     max-width: 500px;
     border-top: 1px solid #a50d0d;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.main-head {
+    font-size: 3em;
+    @media (min-width: 500px) {font-size: 3.8rem;}
+} 
+
+.sub-head {
+    font-size: 2rem;
+    @media (min-width: 500px) {font-size: 2.8rem;}
+}
+h4 {
+    color: #3E4147;
+    font-size: 1.5rem;
+    @media (min-width: 500px) {font-size: 2.4rem;}
 }
 
 .intro-message > h3 {
