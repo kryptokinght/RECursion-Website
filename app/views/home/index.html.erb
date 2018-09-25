@@ -1,102 +1,122 @@
 <% content_for :heading do %>
 	<a style="text-decoration:none;" href="/">RECursion</a>
 <% end %>
-<style>
-.card-title{
-	font-size: 14px !important; 
-}
-</style>
-	<div class="intro-header scrollspy" id="home" >
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-message">
-                    <h1>RECursion</h1>
-                    <hr class="intro-divider">
 
-                    <h3>Programming Club of NIT Durgapur</h3>      
-                </div>
-            </div>
-        </div>
- </div>
- <div class= "section scrollspy" id="about">
-    	<div class="section no-pad-bot white scrollspy" id="about">
-         <div class="container">
-          <h2 >Who are we?</h2>
-         </div>
-         <div class="container">
-            <img class="TextWrap" src="icons/show.jpg">
-            <p style="line-height: 1.15em;">RECursion NIT Durgapur is an initiative to embolden the budding coding minds through regular Code Classes, robust coding competitions and geeky sessions.<br>
-            Pioneered by a faction of enthusiasts in 2014, RECursion has continued to evolve ever since. Besides a fancy placement package, we seek to ameliorate participation in programming competitions like ACM ICPC etc. <br>
-            Our dynamic panel is invariably available to sort any techie doubts and cultivate positivity in you. We intend to create an intriguing ambience where coding is more of a mental sport and after every green tick, the Coder in you gets bigger and wittier. So if you have those bits hovering over your head 24*7, RECursion is your Solution!<Br>
-            <P align="Center">
-            <blockquote>
-            "Coding is a Choice, not a Compulsion.<Br>When you are doing it, just do it with a smile."
-            </blockquote>
-          </div>
-          <div style="text-align: center;">
-             <a href='/getstarted'><button class="waves-effect waves-light btn">How to Get Started</button></a>
-          </div>
-     </div>
+<style>
+  .card-title {
+    font-size: 14px !important;
+  }
+</style>
+
+<div class="intro-header scrollspy" id="home">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="intro-message">
+        <h1>RECursion</h1>
+        <hr class="intro-divider">
+
+        <h3>Programming Club of NIT Durgapur</h3>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="section scrollspy" id="about">
+  <div class="section no-pad-bot white scrollspy" id="about">
+    <div class="container">
+      <h2>Who are we?</h2>
+    </div>
+    <div class="container">
+      <img class="TextWrap" src="icons/show.jpg">
+      <p style="line-height: 1.15em;">RECursion NIT Durgapur is an initiative to embolden the budding coding minds
+        through regular Code Classes, robust coding competitions and geeky sessions.<br>
+        Pioneered by a faction of enthusiasts in 2014, RECursion has continued to evolve ever since. Besides a fancy
+        placement package, we seek to ameliorate participation in programming competitions like ACM ICPC etc. <br>
+        Our dynamic panel is invariably available to sort any techie doubts and cultivate positivity in you. We intend
+        to create an intriguing ambience where coding is more of a mental sport and after every green tick, the Coder
+        in you gets bigger and wittier. So if you have those bits hovering over your head 24*7, RECursion is your
+        Solution!<Br>
+        <P align="Center">
+          <blockquote>
+            "Coding is a Choice, not a Compulsion.<Br>When you are doing it, just do it with a smile."
+          </blockquote>
+    </div>
+    <div style="text-align: center;">
+      <a href='/getstarted'><button class="waves-effect waves-light btn">How to Get Started</button></a>
+    </div>
+  </div>
+</div>
 
 <div class="section no-pad-bot white scrollspy" id="event">
-        <div class="container">
-          <h2>Events</h2>
-          <div class="row">
-         <div class="col s12">
-           <ul class="tabs">
-             <li class="tab col s6"><a class="active" href="#future">Future</a></li>
-             <li class="tab col s6"><a class="active" href="#past">Past </a></li>
-           </ul>
-         </div>
-         <div id="future" class="col s12">
-           <div class="row" style="padding-top:5%">
-            <% @future_events.each do |event| %>
-             <div class="col-sm-4">
-               <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="img-responsive activator" src="icons/7.jpg">
-                </div>
-                <div class="card-content">
-                  <span style="font-size: 16px" class="card-title activator grey-text text-darken-4"><%= event.title.truncate(22) %><i class="material-icons right" aria-hidden="true">expand_less</i></span>
-                  <p><%= event.start_time.strftime('%b %d, %Y') %></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"><%= event.title %><i class="material-icons right">close</i></span>
-                  <hr />
-                  <p><%= event.description.truncate(150) %></p>
-                </div>
-               </div>
-             </div>
-            <% end %>
-           </div>
-         </div>
-         <div id="past" class="col s12">
-           <div class="row" style="padding-top:5%">
-           <% @past_events.each do |event| %>
-             <div class="col-sm-4">
-               <div class="card">
-                <div class="card-image">
-                  <img class="img-responsive activator" src="icons/7.jpg">
-                </div>
-                <div class="card-content">
-                  <span style="font-size: 16px" class="card-title activator grey-text text-darken-4"><%= event.title.truncate(22) %><i class="material-icons right" aria-hidden="true">expand_less</i></span>
-                  <p><%= event.start_time.strftime('%b %d, %Y') %></p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"><%= event.title %><i class="material-icons right">close</i></span>
-                  <hr />
-                  <p><%= event.description.truncate(150) %></p>
-                </div>
-               </div>
-             </div>
-            <% end %>
+  <div class="container">
+    <h2>Events</h2>
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s6"><a class="active" href="#future">Future</a></li>
+          <li class="tab col s6"><a class="active" href="#past">Past </a></li>
+        </ul>
+      </div>
+      <div id="future" class="col s12">
+        <div class="row" style="padding-top:5%">
+          <% @future_events.each do |event| %>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="img-responsive activator" src="icons/7.jpg">
+              </div>
+              <div class="card-content">
+                <span style="font-size: 16px" class="card-title activator grey-text text-darken-4">
+                  <%= event.title.truncate(22) %><i class="material-icons right" aria-hidden="true">expand_less</i></span>
+                <p>
+                  <%= event.start_time.strftime('%b %d, %Y') %>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  <%= event.title %><i class="material-icons right">close</i></span>
+                <hr />
+                <p>
+                  <%= event.description.truncate(150) %>
+                </p>
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+      <div id="past" class="col s12">
+        <div class="row" style="padding-top:5%">
+          <% @past_events.each do |event| %>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-image">
+                <img class="img-responsive activator" src="icons/7.jpg">
+              </div>
+              <div class="card-content">
+                <span style="font-size: 16px" class="card-title activator grey-text text-darken-4">
+                  <%= event.title.truncate(22) %><i class="material-icons right" aria-hidden="true">expand_less</i></span>
+                <p>
+                  <%= event.start_time.strftime('%b %d, %Y') %>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  <%= event.title %><i class="material-icons right">close</i></span>
+                <hr />
+                <p>
+                  <%= event.description.truncate(150) %>
+                </p>
+              </div>
+            </div>
+          </div>
+          <% end %>
 
-           </div>
-         </div>
-       </div>
-       </div>
-     </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- PARALLAX 2 -->
 <div class="parallax-container">
@@ -111,75 +131,81 @@
   </div>
 </div>
 
-    <div class="section scrollspy" id="team">
-    <div id="firstPage">
-       <div class="container">
-           <h2 class="header text_b" style="color: #212121;"> Our Team </h2>
-           <div class="row">
-               <div class="col s12 m4">
-                   <div class="card card-avatar">
-                       <img class="activator" src="/icons/chetan.jpg">
-                       <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Chetan Garg <br/>
-                               <small><em><h6 class="red-text text-darken-1">President</h6></em></small></span>
-                              <a href="https://www.facebook.com/chetan.garg.927" target="_blank">
-                                <i class="fa fa-facebook"></i>
-                              </a>
-					     	                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="9475616155">
-                               	   <i class="material-icons">phone</i>
-                               </a>
-                               <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="chetangarg1102@gmail.com">
-                               	   <i class="material-icons">email</i>
-                               </a>
-                       </div>
-                   </div>
-               </div>
-               <div class="col s12 m4">
-                   <div class="card card-avatar">
-                      <img class=" activator" src="/icons/sourav.jpg">
-                       <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Sourav Agarwal <br/>
-                               <small><em><h6 class="red-text text-darken-1">Treasurer</h6></em></small></span>
-                              <a href="https://www.facebook.com/sourav.agarwal.56829" target="_blank">
-                                   <i class="fa fa-facebook"></i>
-                               </a>
-					     	   <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="8981775377">
-                               	   <i class="material-icons">phone</i>
-                               </a>
-                               <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="souravagarwal5377@gmail.com">
-                               	   <i class="material-icons">email</i>
-                               </a>
-                       </div>
-                   </div>
-               </div>
-               <div class="col s12 m4">
-				<div class="card card-avatar">
-					<div class="card card-avatar">
-                      <img class=" activator" src="/icons/vishvanath.jpg">
-                       <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">Vishvanath Dutt Sharma<br/>
-                               <small><em><h6 class="red-text text-darken-1">Convener</h6></em></small>
-                           </span>
-                               <a href="https://www.facebook.com/vishvanath.duttsharma" target="_blank">
-                                   <i class="fa fa-facebook"></i>
-                               </a>
-					     	   <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="9005559991">
-                               	   <i class="material-icons">phone</i>
-                               </a>
-                               <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="visitdutt@gmail.com">
-                               	   <i class="material-icons">email</i>
-                               </a>
-                       </div>
-                   </div>
-				</div>
-			</div>
-           </div>
-           <div style="text-align: center;">
-             <a href='/team' class="waves-effect waves-light btn" style="color: #fff;">All</a>
-           </div>
-       </div>
+<div class="section scrollspy" id="team">
+  <div id="firstPage">
+    <div class="container">
+      <h2 class="header text_b" style="color: #212121;"> Our Team </h2>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card card-avatar">
+            <img class="activator" src="/icons/chetan.jpg">
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Chetan Garg <br />
+                <small><em>
+                    <h6 class="red-text text-darken-1">President</h6>
+                  </em></small></span>
+              <a href="https://www.facebook.com/chetan.garg.927" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="9475616155">
+                <i class="material-icons">phone</i>
+              </a>
+              <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="chetangarg1102@gmail.com">
+                <i class="material-icons">email</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card card-avatar">
+            <img class=" activator" src="/icons/sourav.jpg">
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Sourav Agarwal <br />
+                <small><em>
+                    <h6 class="red-text text-darken-1">Treasurer</h6>
+                  </em></small></span>
+              <a href="https://www.facebook.com/sourav.agarwal.56829" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="8981775377">
+                <i class="material-icons">phone</i>
+              </a>
+              <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="souravagarwal5377@gmail.com">
+                <i class="material-icons">email</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card card-avatar">
+            <div class="card card-avatar">
+              <img class=" activator" src="/icons/vishvanath.jpg">
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Vishvanath Dutt Sharma<br />
+                  <small><em>
+                      <h6 class="red-text text-darken-1">Convener</h6>
+                    </em></small>
+                </span>
+                <a href="https://www.facebook.com/vishvanath.duttsharma" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="9005559991">
+                  <i class="material-icons">phone</i>
+                </a>
+                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="visitdutt@gmail.com">
+                  <i class="material-icons">email</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-     </div>
+      <div style="text-align: center;">
+        <a href='/team' class="waves-effect waves-light btn" style="color: #fff;">All</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
 
