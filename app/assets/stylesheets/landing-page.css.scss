@@ -26,8 +26,13 @@ html {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/icons/frontpage.jpg) no-repeat center center;
-    background-size: cover;
+    /*background: url(/icons/frontpage.jpg) no-repeat center center;*/
+    /*background-size: cover;*/
+}
+
+div#about {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
 }
 
 .get-started{
@@ -229,4 +234,11 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1000;
 }

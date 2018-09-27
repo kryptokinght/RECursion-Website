@@ -1,5 +1,5 @@
 <% content_for :heading do %>
-	<a style="text-decoration:none;" href="/">RECursion</a>
+<a style="text-decoration:none;" href="/">RECursion</a>
 <% end %>
 
 <style>
@@ -7,7 +7,7 @@
     font-size: 14px !important;
   }
 </style>
-
+<canvas id="perampokgoogle"></canvas>
 <div class="intro-header scrollspy" id="home">
   <div class="row">
     <div class="col-lg-12">
@@ -22,17 +22,17 @@
 </div>
 
 <div class="section scrollspy" id="about">
-  <div class="section no-pad-bot white scrollspy" id="about">
+  <div class="section no-pad-bot scrollspy">
     <div class="container">
       <h2>Who are we?</h2>
     </div>
-    <div class="container">
-      <img class="TextWrap" src="icons/show.jpg">
-      <p style="line-height: 1.15em;">RECursion NIT Durgapur is an initiative to embolden the budding coding minds
+    <div class="container" id="introduction">
+      <p>RECursion NIT Durgapur is an initiative to embolden the budding coding minds
         through regular Code Classes, robust coding competitions and geeky sessions.<br>
         Pioneered by a faction of enthusiasts in 2014, RECursion has continued to evolve ever since. Besides a fancy
         placement package, we seek to ameliorate participation in programming competitions like ACM ICPC etc. <br>
-        Our dynamic panel is invariably available to sort any techie doubts and cultivate positivity in you. We intend
+        Our dynamic panel is invariably available to sort any techie doubts and cultivate positivity in you. We
+        intend
         to create an intriguing ambience where coding is more of a mental sport and after every green tick, the Coder
         in you gets bigger and wittier. So if you have those bits hovering over your head 24*7, RECursion is your
         Solution!<Br>
@@ -42,7 +42,7 @@
           </blockquote>
     </div>
     <div style="text-align: center;">
-      <a href='/getstarted'><button class="waves-effect waves-light btn">How to Get Started</button></a>
+      <a href='/getstarted'><button class="waves-effect waves-light btn btn-custom">How to Get Started</button></a>
     </div>
   </div>
 </div>
@@ -118,7 +118,7 @@
   </div>
 </div>
 
-    <!-- PARALLAX 2 -->
+<!-- PARALLAX 2 -->
 <div class="parallax-container">
   <!-- <div class="parallax"><img src="img/7.jpg" width=100px ></div> -->
   <div id="owl-ca" class="owl-carousel owl-theme">
@@ -134,25 +134,27 @@
 <div class="section scrollspy" id="team">
   <div id="firstPage">
     <div class="container">
-      <h2 class="header text_b" style="color: #212121;"> Our Team </h2>
+      <h2 class="header text_b post-head"> Our Team </h2>
       <div class="row">
         <div class="col s12 m4">
           <div class="card card-avatar">
             <img class="activator" src="/icons/chetan.jpg">
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Chetan Garg <br />
+              <span class="card-title activator">Chetan Garg <br />
                 <small><em>
                     <h6 class="red-text text-darken-1">President</h6>
                   </em></small></span>
-              <a href="https://www.facebook.com/chetan.garg.927" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="9475616155">
-                <i class="material-icons">phone</i>
-              </a>
-              <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="chetangarg1102@gmail.com">
-                <i class="material-icons">email</i>
-              </a>
+              <div class="contact-icons">
+                <a href="https://www.facebook.com/chetan.garg.927" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="9475616155">
+                  <i class="material-icons">phone</i>
+                </a>
+                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="chetangarg1102@gmail.com">
+                  <i class="material-icons">email</i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -160,32 +162,34 @@
           <div class="card card-avatar">
             <img class=" activator" src="/icons/sourav.jpg">
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Sourav Agarwal <br />
+              <span class="card-title activator">Sourav Agarwal <br />
                 <small><em>
                     <h6 class="red-text text-darken-1">Treasurer</h6>
                   </em></small></span>
-              <a href="https://www.facebook.com/sourav.agarwal.56829" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="8981775377">
-                <i class="material-icons">phone</i>
-              </a>
-              <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="souravagarwal5377@gmail.com">
-                <i class="material-icons">email</i>
-              </a>
+              <div class="contact-icons">
+                <a href="https://www.facebook.com/sourav.agarwal.56829" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="8981775377">
+                  <i class="material-icons">phone</i>
+                </a>
+                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="souravagarwal5377@gmail.com">
+                  <i class="material-icons">email</i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card card-avatar">
-            <div class="card card-avatar">
-              <img class=" activator" src="/icons/vishvanath.jpg">
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Vishvanath Dutt Sharma<br />
-                  <small><em>
-                      <h6 class="red-text text-darken-1">Convener</h6>
-                    </em></small>
-                </span>
+            <img class=" activator" src="/icons/vishvanath.jpg">
+            <div class="card-content">
+              <span class="card-title activator">Vishvanath Dutt Sharma<br />
+                <small><em>
+                    <h6 class="red-text text-darken-1">Convener</h6>
+                  </em></small>
+              </span>
+              <div class="contact-icons">
                 <a href="https://www.facebook.com/vishvanath.duttsharma" target="_blank">
                   <i class="fa fa-facebook"></i>
                 </a>
@@ -201,30 +205,77 @@
         </div>
       </div>
       <div style="text-align: center;">
-        <a href='/team' class="waves-effect waves-light btn" style="color: #fff;">All</a>
+        <a href='/team' class="waves-effect waves-light btn btn-custom" style="color: #fff;">All</a>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  window.addEventListener('load', eventWindowLoaded, false);
 
-$(document).ready(function(){
+  function eventWindowLoaded() {
+    canvasApp();
+  }
 
-  $('.modal').modal();
-  $('.modal-trigger').modal();
+  function canvasSupport(e) {
 
-  $("#owl-ca").owlCarousel({
+    return !!e.getContext;
+
+  }
+
+  function canvasApp() {
+    var canvas = document.getElementById('perampokgoogle');
+
+    if (!canvasSupport(perampokgoogle)) {
+      return;
+    }
+
+    var ctx = canvas.getContext('2d');
+    var w = canvas.width = window.innerWidth;
+    var h = canvas.height = window.innerHeight;
+    var yPositions = Array(300).join(0).split('');
+
+    function runMatrix() {
+      if (typeof Game_Interval != 'undefined') clearInterval(Game_interval);
+      Game_Interval = setInterval(drawScreen, 33);
+    }
+
+    function drawScreen() {
+      ctx.fillStyle = 'rgba(0,0,0,.05)';
+      ctx.fillRect(0, 0, w, h);
+      ctx.fillStyle = '#0f0';
+      ctx.font = '10px Georgia';
+      yPositions.map(function (y, index) {
+        text = String.fromCharCode(1e2 + Math.random() * 33);
+        x = (index * 10) + 10;
+        ctx.fillText(text, x, y);
+        if (y > 100 + Math.random() * 1e4) {
+          yPositions[index] = 0;
+        } else {
+          yPositions[index] = y + 10;
+        }
+      })
+    }
+
+    runMatrix();
+
+  }
+</script>
+<script>
+  $(document).ready(function () {
+
+    $('.modal').modal();
+    $('.modal-trigger').modal();
+
+    $("#owl-ca").owlCarousel({
       autoPlay: 5000, //Set AutoPlay to 3 seconds
-      items : 3,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3],
+      items: 3,
+      itemsDesktop: [1199, 3],
+      itemsDesktopSmall: [979, 3],
       slideSpeed: 200,
       responsive: true
+    });
+
   });
-
-});
-
-
-
 </script>
