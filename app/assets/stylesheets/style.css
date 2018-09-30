@@ -93,7 +93,7 @@
  }
 
  .navbar-fixed a:hover {
-   color: #fff;
+   color: #11dd11;
  }
 
  .sidenav {
@@ -110,7 +110,7 @@
  }
 
  .side-nav a:hover {
-   color: #0097a7;
+   color: #11dd11;
  }
 
  span.badge {
@@ -244,9 +244,16 @@
    margin-bottom: 20px;
  }
 
- .btn-custom:hover {
+ button.btn-custom:hover {
+   color: #11DD11;
    background-color: black;
-   color: white;
+   border-color: #11DD11;
+ }
+
+ a.btn-custom:hover {
+   color: #11dd11;
+   border-color: #11dd11;
+   background-color: black;
  }
 
  .container li a:visited {
@@ -254,7 +261,7 @@
  }
 
  .container li a:hover {
-   color: #0097a7;
+   color: #11dd11;
  }
 
  @media only screen and (min-width : 601px) {
@@ -301,15 +308,15 @@
    color: #2196F3;
  }
 
- .card-content a:hover {
-   color: #2196F3;
- }
-
  .card-avatar {
    text-align: center;
    margin-top: 20px;
    background-color: rgba(0, 0, 0, 0.8);
    color: white;
+ }
+
+ .card.card-avatar:hover {
+   background-color: rgba(0, 0, 0, 0.9);
  }
 
  .card-avatar img {
@@ -537,7 +544,7 @@
    width: 100%;
  }
 
- .contact-icons > a {
+ .contact-icons>a {
    display: inline-block;
    display: -moz-inline-box;
    *display: inline;
@@ -549,6 +556,6 @@
    text-align: center;
  }
 
- .contact-icons > a:first-child {
-  margin-left: 0;
-}
+ .contact-icons>a:first-child {
+   margin-left: 0;
+ }
